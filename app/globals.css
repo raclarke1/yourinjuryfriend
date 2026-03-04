@@ -1,0 +1,39 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap');
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Inter', system-ui, sans-serif;
+  color: #1a2744;
+  background: #f8f6f3;
+}
+
+.prose h2 {
+  @apply text-2xl font-bold text-navy mt-8 mb-4;
+}
+
+.prose h3 {
+  @apply text-xl font-semibold text-navy mt-6 mb-3;
+}
+
+.prose p {
+  @apply mb-4 leading-relaxed text-gray-700;
+}
+
+.prose ul {
+  @apply list-disc pl-6 mb-4 space-y-1;
+}
+
+.prose li {
+  @apply text-gray-700 leading-relaxed;
+}
+
+.prose strong {
+  @apply text-navy font-semibold;
+}
